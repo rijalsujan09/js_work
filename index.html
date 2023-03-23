@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_practice</title>
+   <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+    <!-- To-Do List for week -->
+    <div id="todo-box">
+        <div class="todo-work">
+            <input id="add-goal" type="text" placeholder="Enter Your Weekly Goal" required>
+            <input id="add-button" type="button" value="Add">
+        </div>
+        <div class="todo-list">
+            <ul id="myList">
+            </ul>
+        </div>
+        <hr/>
+    </div>
+    <br>
+    
+    <!-- Rock papper and Scissior Game -->
+    <div class="rpg-box">
+
+        <div class="choice-box user">
+
+            <button onclick="userChoice()" class="choic-btn rock">
+                <img src="./images/image2.jpg" alt="Rock">
+            </button>
+            <button onclick="userChoice()"  class="choic-btn rock">
+                <img src="./images/image3.jpg" alt="Rock">
+            </button>
+            <button onclick="userChoice()"  class="choic-btn rock">
+                <img src="./images/image1.jpg" alt="Rock">
+            </button>
+
+            <h3 class="score">Score =</h3>
+
+        </div>
+        <div class="choice-box comp">
+
+            <div class="choic-img gene">
+                <img id="comp-img" src="" alt="generated image" >
+            </div>
+
+            <h3 class="score">Score = </h3>
+        </div>
+
+    </div>
+    
+
+<script src="./main.js"></script>
+</body>
+</html>

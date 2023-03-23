@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hw.css">
+</head>
+
+<body>
+
+    <!--  Assignment 2 
+    Create three divs horizontal at the start of the web page. 
+    - Each div should have a common class and a unique class. 
+    - Each div should have height and width of 100px and margin and padding of 10px;
+    - The background color of first div should be red, second be blue and third be green.
+    -->
+    <h3>Assignment 2</h3>
+
+   <div id="container">
+   <div class="box box1"></div>
+   <div class="box box2"></div>
+   <div class="box box3"></div>
+   </div>
+   <!-- complete of assignment 2 -->
+
+   <br/><br/>
+   <hr/>
+   <br/><br/>
+
+   <!--  Assignment 3
+    - Create three input fields in html for username, email and password.
+    - Give an unique id to each input field.
+    - Create a submit button.
+    - When submit button is clicked, a function should be called to check whether any input field is empty.
+    - If any input field is empty alert - empty input field cannot submit, else alert - form submitted.
+   -->
+
+<div class="box-as2">
+  <h3>Assignment 3</h3>
+  <br>
+  <h4>User Name</h4>
+  <input type="text" id="userName" placeholder="....  user name">
+  <br/><br/>
+  <h4>User Email</h4>
+  <input type="text" id="email" placeholder="....  user email">
+  <br/><br/>
+  <h4>User Password</h4>
+  <input type="text" id="password" placeholder="....  user password">
+  <br/><br/>
+  <p id="errmsg"></p>
+  <input type="submit"  onclick="checkEmpty()" value="Submit" style="margin-left:40px;">
+</div>
+   
+   <!--end of assignment 3 -->
+   <br/><br/>
+   <hr/>
+   <br/><br/>
+
+   <!-- Start of Assignmnet 4
+    1.Create two textfields for staring number and ending and a generate button 
+    2.Create one textfield and guess button.
+    3.Hide 2 on windows load.
+    4.On generate button click, if textfields are not empty and firstnumber>second number, hide 1 and show 2, else alert error.
+    5. On windows 2 load, below the guess button should be chances. Give three chances . Eg: chances-3
+    6. On each incorrect guess decrement chance by 1 and display message below chance, your guess is high/low.
+    7. If chance == 0 , hide 2 and display message. Sorry you lost. The correct answer is ...
+    8. If guessed right, alert you won.
+ -->
+
+
+
+ <div class="num-game">
+  <h3>Assignment 3</h3>
+  <br>
+    <input type="text" id="g1">
+    <input type="text" id="g2">
+    <p id="msg"></p>
+    <br/>
+    <button type="submit" onclick="generate()">Generate</button>
+ </div>
+
+
+    <script src="./hw.js"></script>
+</body>
+
+</html>
